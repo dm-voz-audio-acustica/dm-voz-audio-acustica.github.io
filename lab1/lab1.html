@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css?v=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 </head>
 
 <body>
@@ -127,6 +128,24 @@
             <img src="../images/lab1/decaimento_adiantado.jpg" height="200"/>
             <img src="../images/lab1/decaimento_adiantado_zoom.jpg" height="200"/>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias ullam mollitia veniam vitae expedita, tempore cumque natus, enim quasi praesentium cupiditate distinctio voluptate minima facilis repudiandae, similique perspiciatis! Quas, nam?</p>
+        </div>
+    </div>
+
+    <div class="section white">
+        <div class="row container">
+            <h5 class="header">Determinação do tempo de reverberação RT<sub>60</sub> utilizando a resposta ao impulso da sala</h5>
+            <img src="../images/lab1/reverb60_resp_freq.jpg" height="400"/>
+            <p>
+                A figura mostra a resposta oa impulso da sala (mesmo áudio do item anterior). Verifica-se que 
+                <script type="math/tex">t_{5} \approx 0.075</script> e 
+                <script type="math/tex">t_{35} \approx 0.5</script> logo:
+            </p>
+            <script type="math/tex">
+                T_60 \approx 60 \cdot \frac{t_{-35} - t_{-5}}{-5-(-35)} s
+            </script>
+            <script type="math/tex">
+                T_60 \approx 0,85 s
+            </script>
         </div>
     </div>
 
