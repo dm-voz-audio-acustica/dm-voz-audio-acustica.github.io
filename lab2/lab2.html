@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lab 2 - Aplicações em Acústica, Áudio e Voz</title>
+    <meta name="description" content="Lab 02" />
+    <meta name="author" content="Dimitri e Matheus" />
+    <link rel="icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css?v=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper #ba68c8 purple lighten-2">
+            <a href="#!" class="brand-logo center">Aplicações em Acústica, Áudio e Voz</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="../index.html">Página Inicial</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="../index.html">Pagina Inicial</a></li>
+    </ul>
+
+    <div class="section white">
+        <div class="row container">
+            <center>
+                <h2 class="header">Laboratório 2: Dispositivos Eletroacústicos</h2>
+            </center>
+        </div>
+    </div>
+    
+    <div class="section white">
+        <div class="row container">
+
+            <h5 class="header">Conjunto 1 - Medições em Alto Falantes</h5>
+
+                <p>LOREM IPSUM.</p>
+                <br>
+                
+
+
+            <h5 class="header">Conjunto 2 - Caracterização do Amplificador de Potência (PA)</h5>
+
+                <p>Nesta etapa do experimento, 3 conjuntos de 3 alto-falantes cada conectados em série entre si foram ligados em paralelo, 
+                    formando um grid de 3x3, como mostra a figura abaixo. </p>
+                
+                    <img src="../images/lab2/2_Speakers.png" width="1100"/>
+
+                    <br>
+
+                <p>Os terminais destes alto-falantes foram conectados à saída de um amplificador Watson 2200 de 600W. Além disso, na saída do amplificador 
+                    também foram conectadas as pontas de prova de um osciloscópio Keysight DSOX3024T para monitoramento do sinal amplificado, nos domínios 
+                    do tempo e frequência. </p>
+
+                    <img src="../images/lab2/2_Amp1.jpg" width="1100"/>
+
+                    <br>
+
+                <p>Já o sinal de entrada foi gerado por um gerador de sinais Tektronix AFG 3021B, consistindo em uma onda senoidal com frequência de 1 kHz e 
+                    amplitude de 3 Vpp. Vale destacar que, apesar de a recomendação do roteiro ser um sinal de 1 Vpp, os testes preliminares indicaram que o 
+                    sinal gerado não tinha potência suficiente para que ocorresse distorções no sinal do amplificador, o que levou a escolha de aumentar a 
+                    tensão do sinal para 3 Vpp.</p>
+                    <br>
+
+                    <img src="../images/lab2/2_GeradorSinais.jpg" width="1100"/>
+                    <br>
+
+                <p>No início do experimento, o botão do controle de ganho do amplificador foi ajustado para o valor de atenuação máxima, e então o ganho foi 
+                    sendo aumentado gradativamente até que fosse possível observar distorções na forma da onda gerada. Uma vez identificado o ponto em que 
+                    ocorria distorção, o botão foi ajustado novamente para o ponto imediatamente anterior a este fenômeno, que no marcador do amplificador 
+                    correspondeu a -1dB.</p>
+                    <br>
+
+                    <img src="../images/lab2/2_Ganho_Amp1.jpg" width="1100"/>
+                    <br>
+
+
+                <p>A forma de onda e o espectro o sinal são apresentados abaixo:</p>
+                <br>
+
+                    <img src="../images/lab2/2_osciloscopio1.png" width="1100"/>
+                    <br>
+
+                <p>A etapa seguinte do experimento consistiu em reproduzir todos os passos anteriores utilizando um amplificador Unic ZX Storm Series. As figuras 
+                    abaixo apresentam o ajuste de ganho do amplificador, bem como o sinal gerado no tempo e na frequência. Vale destacar que, diferente do Wattson, 
+                    este amplificador apresenta a gradação em uma escala de 0 a 10. Nos testes realizados, a ganho limiar para que houvesse distorção no sinal foi 
+                    de aproximadamente 7 na escala do dispositivo.</p>
+                    <br>
+
+                    <img src="../images/lab2/2_Ganho_Amp2.jpg" width="1100"/>
+                    <br>
+
+                    <img src="../images/lab2/2_osciloscopio2.png" width="1100"/>
+                    <br>
+
+                <p>Durante a aquisição dos dados, verificou-se que a distorção temporal dos sinais se deu por meio de um leve achatamento nos vales da onda do 
+                    amplificador Wattson, e nos picos das ondas produzidas pelo segundo amplificador Unic.</p>
+    
+            
+
+            <h5 class="header">Conjunto 3 - Testes com microfones </h5>
+
+
+            <h6 class="header">Shure SM57 </h6>
+
+            <img src="../images/lab2/3_Shure SM57.jpg" width="500"/>
+            <br>
+
+            <p>O Shure SM57 é conhecido por sua resistência e versatilidade, sendo amplamente utilizado tanto em estúdios de gravação quanto em palcos de shows ao 
+                redor do mundo. Sua resposta de frequência equilibrada e padrão polar cardioide o tornam adequado para diversas aplicações musicais e de áudio. É 
+                considerado um padrão da indústria para a captura de som de instrumentos musicais e vocais em ambientes ao vivo e de estúdio. Algumas de suas 
+                aplicações típicas incluem: Instrumentos musicais, amplificadores de guitarra, caixas de bateria, instrumentos de sopro, vocais, gravação de estúdio 
+                e apresentações ao vivo. Suas especificações técnicas incluem:</p>
+
+                <ul>
+                    <li><strong>Impedância:</strong> 150 ohms (310 ohms reais).</li>
+                    <li><strong>Resposta Frequência:</strong> 40Hz à 15KHz.</li>
+                    <li><strong>Sensibilidade:</strong> Sensibilidade a 1KHz: -56.0 dBV/Pa (1.6 mV) 1 Pa = 94 dB SPL.</li>
+                    <li><strong>Tipo:</strong> Diagrama Polar Cardióide.</li>
+                    <li><strong>Conector:</strong> XLR de 3 pinos.</li>
+                    <li><strong>Impedância nominal:</strong> 150 ohms (310 ohms reais) para conexão a entradas de microfone de baixa impedância;</li>
+                    <li><strong>Dimensões:</strong> 32x32x157mm;</li>
+                    <li><strong>Peso aproximado:</strong> 284 gramas.</li>
+                  </ul>
+
+                
+            <br>
+            <h6 class="header">AKG C214 </h6>
+
+            <p>O AKG C214 é um microfone condensador de diafragma grande projetado para aplicações de estúdio e gravação. Fabricado pela AKG, uma marca reconhecida na 
+                indústria de equipamentos de áudio, sendo uma versão mais acessível e próxima do renomado microfone C414. Algumas de suas especificações técnicas incluem:</p>
+
+                <ul>
+                    <li><strong>Tipo de Microfone:</strong> Condensador de Diafragma Grande</li>
+                    <li><strong>Padrão Polar:</strong> Cardioide (captura predominantemente o som da frente e minimiza os sons laterais e traseiros)</li>
+                    <li><strong>Resposta de Frequência:</strong> 20 Hz a 20 kHz</li>
+                    <li><strong>Sensibilidade:</strong> 20 mV/Pa</li>
+                    <li><strong>Impedância:</strong> 200 ohms</li>
+                    <li><strong>Nível de Saída Máximo:</strong> 136 dB SPL (para 0,5% de THD)</li>
+                    <li><strong>Relação Sinal-Ruído:</strong> 81 dB</li>
+                    <li><strong>Conector:</strong> XLR de 3 pinos</li>
+                    <li><strong>Peso:</strong> 280 g</li>
+                    <li><strong>Dimensões:</strong> 55x55x160 mm</li>
+                    <li><strong>Filtro de Corte de Graves:</strong> Possui um filtro de corte de graves comutável em duas posições (Flat, 160 Hz) para redução de ruídos indesejados de baixas frequências.</li>
+                  </ul>
+                  
+            <img src="../images/lab2/3_AKG_C214.jpg" width="500"/>
+            <br>
+
+            <p>Nesta etapa do experimento foi utilizada uma caixa de som bluetooth de 5W para reproduzir algumas músicas, que por sua vez foram capturadas por ambos os 
+                microfones, permitindo realizar uma comparação qualitativa entre algumas das características de cada microfone.</p>
+
+            <br>
+
+            <h6 class="header">Bon Jovi - It's My Life </h6>
+            
+            <p>Shure SM57 </p>
+            <audio controls>
+                <source src="../audio/lab2/3_its_my_life_Shure.wav" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+
+            <br>
+
+            <p>AKG C214</p>
+            <audio controls>
+                <source src="../audio/lab2/3_its_my_life_AKG.wav" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+
+
+            <br>
+
+            <img src="../images/lab2/3_its_my_life_sinal_tempo.png" width="1200"/>
+            <br>
+
+            <img src="../images/lab2/3_resposta_freq_its_my_life.png" width="1200"/>
+            <br>
+
+            <img src="../images/lab2/3_espectrograma_its_my_life.png" width="1200"/>
+            <br>
+
+
+
+
+            <h6 class="header">Radiohead - Weird Fishes </h6>
+            
+            <p>Shure SM57 </p>
+            <audio controls>
+                <source src="../audio/lab2/3_weird_fishes_Shure.wav" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+
+            <br>
+
+            <p>AKG C214</p>
+            <audio controls>
+                <source src="../audio/lab2/3_weird_fishes_AKG.wav" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+
+
+            <br>
+
+            <img src="../images/lab2/3_sinal_tempo_weird_fishes.png" width="1200"/>
+            <br>
+
+            <img src="../images/lab2/3_resposta_freq_weird_fishes.png" width="1200"/>
+            <br>
+
+            <img src="../images/lab2/3_espectrograma_weird_fishes.png" width="1200"/>
+            <br>
+
+
+
+
+
+
+
+            <h6 class="header">Ariana Grande - Positions </h6>
+            
+            <p>Shure SM57 </p>
+            <audio controls>
+                <source src="../audio/lab2/3_positions_Shure.wav" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+
+            <br>
+
+            <p>AKG C214</p>
+            <audio controls>
+                <source src="../audio/lab2/3_positions_AKG.wav" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+
+
+            <br>
+
+            <img src="../images/lab2/3_sinal_tempo_positions.png" width="1200"/>
+            <br>
+
+            <img src="../images/lab2/3_resposta_freq_positions.png" width="1200"/>
+            <br>
+
+            <img src="../images/lab2/3_espectrograma_positions.png" width="1200"/>
+            <br>
+
+
+
+
+
+            <script type="math/tex">
+                
+            </script>
+
+
+
+        </div>
+    </div>
+
+    
+    
+
+
+
+    <div class="section purple lighten-2">
+        <!-- <center>
+            <p>Abaixo, o arquivo PDF referente ao roteiro do laboratório.</p>
+            <p><iframe src="roteiro.pdf" width="1200" width="600" style="border: none;"></iframe></p>
+        </center> -->
+    </div>
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
